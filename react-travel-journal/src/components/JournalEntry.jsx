@@ -4,7 +4,7 @@ export default function JournalEntry(props) {
     return (
         <section className="journal-entry">
 
-            <div className="journal-entry-image">
+            <div className="journal-entry-image-wrapper">
                 <img src={props.image.src} alt={props.image.alt} />
             </div>
 
