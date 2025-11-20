@@ -27,6 +27,13 @@
   padding: 1rem;
   margin: 1rem 2rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+
+  max-width: 1000px;
+  justify-self: center;
 }
 .journal-entry-location {
   display: flex;
@@ -35,7 +42,6 @@
 }
 .journal-entry-icon {
   width: 20px;
-  height: 20px;
 }
 .journal-entry-map-link {
   color: #555;
@@ -46,4 +52,15 @@
   font-size: 0.9rem;
   color: #888;
   margin-top: 0.5rem;
+}
+.journal-entry-image {
+    width: 350px;
+    height: 250px;
+    overflow: hidden; 
+    border-radius: 5px;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
