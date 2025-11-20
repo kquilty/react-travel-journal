@@ -14,15 +14,7 @@ function App() {
                 return (
                     <JournalEntry 
                         key={entry.id}
-                        image={{
-                            src: entry.img.src,
-                            alt: entry.img.alt
-                        }}
-                        country={entry.country}
-                        dateRange={entry.dates}
-                        googleMapsUrl={entry.googleMapsLink}
-                        title={entry.title}
-                        description={entry.text}
+                        {...entry}
                     />
                 )
             })}
